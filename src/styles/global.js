@@ -20,6 +20,7 @@ export default createGlobalStyle`
 
   body {
     background-color: ${({ theme }) => theme.COLORS.DARK_400};
+    font-family: "Roboto", sans-serif;
     --webkit-font-smoothing: antialiased;
   }
 
