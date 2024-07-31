@@ -1,6 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-
-import { DEVICE_BREAKPOINTS } from "./deviceBreakPoints"
+import { createGlobalStyle } from "styled-components";
+import { DEVICE_BREAKPOINTS } from "./deviceBreakPoints";
 
 export default createGlobalStyle`
   * {
@@ -10,16 +9,18 @@ export default createGlobalStyle`
   }
 
   :root {
-    font-size: 62.5%;
+    @media (min-width: ${DEVICE_BREAKPOINTS.MOBILE_M}) {
+      font-size: 14px;
+    }
+
+    @media (min-width: ${DEVICE_BREAKPOINTS.MOBILE_L}) {
+      font-size: 16px;
+    } 
   }
 
   body {
     background-color: ${({ theme }) => theme.COLORS.DARK_400};
     --webkit-font-smoothing: antialiased;
-
-    @media (min-width: ${DEVICE_BREAKPOINTS.MOBILE_L}) {
-      font-size: 1.6rem;
-    }
   }
 
   a {
