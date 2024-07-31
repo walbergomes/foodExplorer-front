@@ -7,7 +7,21 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root {
+    font-size: 62.5%;
+  }
+
   body {
+    font-size: 1.6rem;
+    background-color: ${({ theme }) => theme.COLORS.DARK_400};
     --webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button, a {
+    cursor: pointer;
   }
 `
