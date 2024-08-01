@@ -30,5 +30,6 @@ export default createGlobalStyle`
 
   button, a {
     cursor: pointer;
+    font-family: "Poppins", sans-serif;
   }
 `
