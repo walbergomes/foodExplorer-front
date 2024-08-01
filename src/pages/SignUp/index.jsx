@@ -5,12 +5,20 @@ import logoImage from "../../assets/logoImage.svg";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
-export function SignIn() {
+export function SignUp() {
   return (
     <Container>
       <img src={logoImage} alt="logo food explorer" />
 
       <Form>
+        <Wrapper>
+          <label htmlFor="name">Seu nome</label>
+          <Input
+            id="name"
+            type="text"
+            placeholder="Exemplo: Maria da Silva" 
+          />
+        </Wrapper>
         <Wrapper>
           <label htmlFor="email">Email</label>
           <Input
@@ -23,15 +31,15 @@ export function SignIn() {
         <Wrapper>
           <label htmlFor="password">Senha</label>
           <Input
-            type="password"
             id="password"
+            type="password"
             placeholder="No mínimo 6 caracteres" 
           />
         </Wrapper>
-        <Button title="Entrar" backgroundColor="TOMATO_100"/> 
+        <Button title="Criar conta" backgroundColor="TOMATO_100"/> 
       </Form>
       
-      <a href="#">Criar uma conta</a>
+      <a href="#">Já tenho uma conta</a>
     </Container>
   );
 }
