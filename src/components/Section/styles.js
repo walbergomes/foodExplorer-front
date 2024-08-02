@@ -9,5 +9,9 @@ export const Container = styled.section`
 
     margin-bottom: 1.5rem;
   }
+`
 
+export const CardsArea = styled.div`
+  display: flex;
+  gap: 1rem;
 `

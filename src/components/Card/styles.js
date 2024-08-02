@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   gap: .75rem;
 
-  width: 13.125rem;
+  min-width: 13.125rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_200};
   border-radius: .5rem;
 
