@@ -1,7 +1,5 @@
 import { Container } from "./styles";
 
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-
 import { Header } from "../../components/Header";
 import { Slogan } from "../../components/Slogan";
 import { Section } from "../../components/Section";
