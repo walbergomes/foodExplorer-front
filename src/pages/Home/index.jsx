@@ -22,6 +22,7 @@ export function Home() {
       <Slogan />
 
       <main>
+        
         <Section title="Refeições">
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide number-slide1"
@@ -41,6 +42,47 @@ export function Home() {
             </div>
           </div>
         </Section>
+
+        <Section title="Pratos Principais">
+          <div ref={sliderRef} className="keen-slider">
+            <div className="keen-slider__slide number-slide1"
+                style={{ maxWidth: 240, minWidth: 240 }}
+            >
+              <Card />
+            </div>
+            <div className="keen-slider__slide number-slide2"
+                style={{ maxWidth: 240, minWidth: 240 }}
+            >
+              <Card />
+            </div>
+            <div className="keen-slider__slide number-slide3"
+                style={{ maxWidth: 240, minWidth: 240 }}
+            >
+              <Card />
+            </div>
+          </div>
+        </Section>
+
+        <Section title="Bebidas">
+          <div ref={sliderRef} className="keen-slider">
+            <div className="keen-slider__slide number-slide1"
+                style={{ maxWidth: 240, minWidth: 240 }}
+            >
+              <Card />
+            </div>
+            <div className="keen-slider__slide number-slide2"
+                style={{ maxWidth: 240, minWidth: 240 }}
+            >
+              <Card />
+            </div>
+            <div className="keen-slider__slide number-slide3"
+                style={{ maxWidth: 240, minWidth: 240 }}
+            >
+              <Card />
+            </div>
+          </div>
+        </Section>
+
       </main>
     </Container>
   );
