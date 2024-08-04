@@ -4,6 +4,7 @@ import { Header } from "../../components/Header";
 import { Slogan } from "../../components/Slogan";
 import { Section } from "../../components/Section";
 import { Card } from "../../components/Card";
+import { Footer } from "../../components/Footer";
 
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -84,6 +85,8 @@ export function Home() {
         </Section>
 
       </main>
+
+      <Footer />
     </Container>
   );
 }
