@@ -11,6 +11,7 @@ import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 import { Select } from "../../components/Select";
 import { IngredientCreate } from "../../components/IngredientCreate"
+import { TextArea } from "../../components/TextArea"
 
 import { CaretLeft, UploadSimple } from "@phosphor-icons/react";
 
@@ -51,6 +52,16 @@ export function NewDish() {
             <IngredientCreate isNew placeholder="Adicionar"/>
             <IngredientCreate value="Pão Naan"/>
           </IngredientsArea>
+        </Wrapper>
+
+        <Wrapper>
+          <label htmlFor="">Preço</label>
+          <Input type="number" placeholder="R$ 40,00"/>
+        </Wrapper>
+
+        <Wrapper>
+          <label htmlFor="">Descrição</label>
+          <TextArea placeholder="A Salada César é uma opção refrescante para o verão."/>
         </Wrapper>
       </Content>
     </Container>
