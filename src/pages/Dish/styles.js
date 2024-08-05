@@ -94,6 +94,8 @@ export const Ingredient = styled.span`
 export const OrdersArea = styled.div`
   display: flex;
   gap: 1rem;
+
+  width: 100%;
 `
 
 export const QuantitySelector = styled.div`
@@ -118,6 +120,8 @@ export const ConfirmOrder = styled.button`
   display: flex;
   align-items: center;
   gap: .375rem;
+
+  width: 100%;
 
   background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
   border: none;

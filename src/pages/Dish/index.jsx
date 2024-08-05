@@ -12,9 +12,10 @@ import {
 } from "./styles";
 
 import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer"
+import { Footer } from "../../components/Footer";
+import { Button } from "../../components/Button";
 
-import { CaretLeft, Minus, Plus, Receipt  } from "@phosphor-icons/react";
+import { CaretLeft, Minus, Plus, Receipt } from "@phosphor-icons/react";
 import DishTest from "../../assets/dishTest.svg";
 
 export function Dish() {
@@ -57,10 +58,11 @@ export function Dish() {
             </SelectQuantity>
           </QuantitySelector>
 
-          <ConfirmOrder>
-            <Receipt />
-            <span>pedir &bull; R$ 25,00</span>
-          </ConfirmOrder>
+          <Button
+            backgroundColor="TOMATO_100"
+            title={`pedir ${String.fromCharCode(8226)} R$ 25,00`}
+            icon={Receipt}
+          />
         </OrdersArea>
       </Content>
 
