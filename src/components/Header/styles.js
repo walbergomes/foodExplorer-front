@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   width: 100%;
   padding: 4rem 1.75rem 1.75rem;
@@ -18,6 +17,7 @@ export const Container = styled.div`
 
   > img {
     width: 10rem;
+    margin: 0 auto;
   }
 `;
 
