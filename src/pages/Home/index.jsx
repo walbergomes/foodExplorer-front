@@ -5,6 +5,7 @@ import { Slogan } from "../../components/Slogan";
 import { Section } from "../../components/Section";
 import { Card } from "../../components/Card";
 import { Footer } from "../../components/Footer";
+import { SideMenu } from "../../components/SideMenu"
 
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -19,6 +20,8 @@ export function Home() {
 
   return (
     <Container>
+      <SideMenu />
+
       <Header />
       <Slogan />
 
