@@ -20,7 +20,7 @@ export function Home() {
 
   return (
     <Container>
-      <SideMenu />
+      {/* <SideMenu /> */}
 
       <Header />
       <Slogan />
