@@ -1,15 +1,17 @@
-import { Container, Top, RouteTo } from "./styles";
+import { Container, Top, RouteTo, ButtonX } from "./styles";
 
 import { X, MagnifyingGlass } from "@phosphor-icons/react";
 
 import { Input } from "../Input";
-import { Footer } from "../Footer"
+import { Footer } from "../Footer";
 
-export function SideMenu() {
+export function SideMenu({ menuIsOpen, onCloseMenu }) {
   return (
-    <Container>
+    <Container data-menu-is-open={menuIsOpen}>
       <Top>
-        <X />
+        <ButtonX onClick={onCloseMenu}>
+          <X />
+        </ButtonX>
         <h2>Menu</h2>
       </Top>
 

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container } from "./styles";
 
 import { Header } from "../../components/Header";
@@ -11,6 +12,8 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 export function Home() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false)
+
   const [sliderRef] = useKeenSlider({
     loop: false,
     mode: "snap",
@@ -20,9 +23,12 @@ export function Home() {
 
   return (
     <Container>
-      {/* <SideMenu /> */}
+      <SideMenu 
+        menuIsOpen={menuIsOpen}
+        onCloseMenu={() => setMenuIsOpen(false)}
+      />
 
-      <Header />
+      <Header onOpenMenu={() => setMenuIsOpen(true)}/>
       <Slogan />
 
       <main>

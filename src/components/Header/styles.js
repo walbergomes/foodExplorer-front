@@ -21,6 +21,17 @@ export const Container = styled.div`
   }
 `;
 
+export const Menu = styled.button`
+  background: none;
+  border: none;
+
+  > svg {
+    height: 1.9rem;
+    width: 2rem;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
+`
+
 export const Orders = styled.div`
   > svg {
     height: 1.9rem;

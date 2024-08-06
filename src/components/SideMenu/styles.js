@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-export const Container = styled.div`
+export const Container = styled.aside`
   width: 100%;
   height: 100vh;
 
@@ -23,6 +23,16 @@ export const Container = styled.div`
 
     padding: 2.25rem 1.75rem 0.875rem;
   }
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+
+  @media (max-width: 428px) {
+
+    &[data-menu-is-open="true"] {
+      transform: translateX(0);
+    }
+  }
 `;
 
 export const Top = styled.div`
@@ -35,13 +45,21 @@ export const Top = styled.div`
 
   padding: 4rem 1.75rem 2rem;
 
-  > svg {
-    font-size: 1.6rem;
-  }
-
   > h2 {
     font-size: 1.375rem;
     font-weight: 400;
+  }
+`;
+
+export const ButtonX = styled.button`
+  background: none;
+  border: none;
+
+  color: ${({ theme }) => theme.COLORS.LIGHT_100};
+
+  > svg {
+    font-size: 1.7rem;
+    margin-top: .3rem;
   }
 `;
 

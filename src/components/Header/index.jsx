@@ -1,12 +1,14 @@
-import { Container, Orders } from "./styles";
+import { Container, Orders, Menu } from "./styles";
 
 import { List, Receipt } from "@phosphor-icons/react";
 import logoImage from "../../assets/logoImage.svg";
 
-export function Header() {
+export function Header({ onOpenMenu }) {
   return (
     <Container>
-      <List />
+      <Menu onClick={ onOpenMenu }>
+        <List />
+      </Menu>
       <img src={logoImage} alt="logo food explorer" />
 
       <Orders>
