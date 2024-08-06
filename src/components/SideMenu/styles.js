@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  
+
   display: flex;
   flex-direction: column;
 
@@ -20,23 +21,9 @@ export const Container = styled.div`
 
     flex-grow: 1;
 
-    padding: 2.25rem 1.75rem .875rem;
-
-    h3 {
-      color: ${({ theme }) => theme.COLORS.LIGHT_300};
-      font-family: "Poppins", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 300;
-
-      &::after {
-        display: block;
-        content: "";
-        border-bottom: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
-        padding-top: 16px;
-      }
-    }
+    padding: 2.25rem 1.75rem 0.875rem;
   }
-`
+`;
 
 export const Top = styled.div`
   display: flex;
@@ -56,4 +43,18 @@ export const Top = styled.div`
     font-size: 1.375rem;
     font-weight: 400;
   }
-`
+`;
+
+export const RouteTo = styled(Link)`
+  color: ${({ theme }) => theme.COLORS.LIGHT_300};
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.DARK_1000};
+    padding-top: 16px;
+  }
+`;

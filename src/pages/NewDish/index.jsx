@@ -22,7 +22,7 @@ export function NewDish() {
     <Container>
       <Header />
       <Content>
-        <BackButton>
+        <BackButton to="/">
           <CaretLeft />
           <span>voltar</span>
         </BackButton>

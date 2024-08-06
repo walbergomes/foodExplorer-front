@@ -1,4 +1,4 @@
-import { Container, Top } from "./styles";
+import { Container, Top, RouteTo } from "./styles";
 
 import { X, MagnifyingGlass } from "@phosphor-icons/react";
 
@@ -18,8 +18,8 @@ export function SideMenu() {
           icon={MagnifyingGlass}
           placeholder="Busque por pratos ou ingredientes"
         />
-        {/* <h3>Novo prato</h3> */}
-        <h3>Sair</h3>
+        <RouteTo to="/newdish">Novo prato</RouteTo>
+        <RouteTo to="/">Sair</RouteTo>
       </main>
       <Footer />
     </Container>
