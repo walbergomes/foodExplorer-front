@@ -12,6 +12,8 @@ import { Input } from "../../components/Input";
 import { Select } from "../../components/Select";
 import { IngredientCreate } from "../../components/IngredientCreate"
 import { TextArea } from "../../components/TextArea"
+import { Button } from "../../components/Button"
+import { Footer } from "../../components/Footer"
 
 import { CaretLeft, UploadSimple } from "@phosphor-icons/react";
 
@@ -49,8 +51,8 @@ export function NewDish() {
         <Wrapper>
           <label htmlFor="">Ingredientes</label>
           <IngredientsArea>
-            <IngredientCreate isNew placeholder="Adicionar"/>
             <IngredientCreate value="Pão Naan"/>
+            <IngredientCreate isNew placeholder="Adicionar"/>
           </IngredientsArea>
         </Wrapper>
 
@@ -63,7 +65,14 @@ export function NewDish() {
           <label htmlFor="">Descrição</label>
           <TextArea placeholder="A Salada César é uma opção refrescante para o verão."/>
         </Wrapper>
+
+        <Button 
+          backgroundColor="TOMATO_400"
+          title="Salvar alterações"
+        />
       </Content>
+
+      <Footer />
     </Container>
   );
 }
