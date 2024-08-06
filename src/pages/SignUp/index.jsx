@@ -2,6 +2,8 @@ import { Container, Form, Wrapper } from "./styles";
 
 import logoImage from "../../assets/logoImage.svg";
 
+import { Link } from "react-router-dom"
+
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
@@ -39,7 +41,7 @@ export function SignUp() {
         <Button title="Criar conta" backgroundColor="TOMATO_100"/> 
       </Form>
       
-      <a href="#">Já tenho uma conta</a>
+      <Link to="/">Já tenho uma conta</Link>
     </Container>
   );
 }

@@ -4,6 +4,7 @@ import logoImage from "../../assets/logoImage.svg";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { Link } from "react-router-dom"
 
 export function SignIn() {
   return (
@@ -31,7 +32,7 @@ export function SignIn() {
         <Button title="Entrar" backgroundColor="TOMATO_100"/> 
       </Form>
       
-      <a href="#">Criar uma conta</a>
+      <Link to="/register">Criar uma conta</Link>
     </Container>
   );
 }
