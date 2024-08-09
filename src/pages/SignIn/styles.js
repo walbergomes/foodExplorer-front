@@ -17,7 +17,7 @@ export const Container = styled.div`
   @media (min-width: ${DEVICE_BREAKPOINTS.LAPTOP}) {
    flex-direction: row;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
 
    margin: 0 7rem;
   }
