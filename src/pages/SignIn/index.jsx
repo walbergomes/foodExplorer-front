@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Container, Form, Wrapper } from "./styles";
 
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakPoints"
@@ -7,7 +8,6 @@ import logoImage from "../../assets/logoImage.svg";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 export function SignIn() {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= parseInt(DEVICE_BREAKPOINTS.LAPTOP));
