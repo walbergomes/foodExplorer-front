@@ -20,27 +20,28 @@ export const Container = styled.div`
       width: 14rem;
     }
   }
-`;
+`
 
 export const Form = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
+  
   > a {
     text-align: center;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    font-size: 0.875rem;
+    font-size: .875rem;
+
   }
-`;
+`
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: .5rem;
 
   > label {
     font-family: "Roboto", system-ui;
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
   }
-`;
+`
