@@ -1,6 +1,7 @@
 import { Container, ButtonArea } from "./styles";
 
 import logo from "../../assets/logo.svg";
+import logoadmin from "../../assets/logoadmin.svg";
 
 import { IoMenu } from "react-icons/io5";
 import { PiReceiptBold } from "react-icons/pi";
@@ -13,6 +14,7 @@ export function Header() {
       </ButtonArea>
 
       <img src={logo} alt="Logo Food Explorer" />
+      {/* <img src={logoadmin} alt="Logo Food Explorer" /> */}
 
       <ButtonArea>
         <PiReceiptBold size={25} />
