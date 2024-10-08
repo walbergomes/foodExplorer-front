@@ -4,6 +4,7 @@ import { Header } from "../../components/Header"
 import { Footer } from "../../components/Footer"
 
 import { Slogan } from "../../components/Slogan"
+import { Section } from "../../components/Section"
 
 export function Home() {
   return (
@@ -12,6 +13,9 @@ export function Home() {
 
       <main>
         <Slogan />
+        <Section title="Refeições">
+         
+        </Section>
       </main>
       
       <Footer />
