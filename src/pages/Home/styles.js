@@ -7,5 +7,7 @@ export const Container = styled.div`
   
   > main {
     flex: 1;
+
+    padding: 0 1rem;
   }
 `
