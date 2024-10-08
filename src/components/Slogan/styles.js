@@ -5,7 +5,7 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_1000};
   border-radius: 3px;
 
-  margin: 2.75rem 0 0 1rem;
+  margin: 2.75rem 0 3rem 1rem;
   
   position: relative;
 
