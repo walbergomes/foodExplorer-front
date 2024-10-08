@@ -14,7 +14,7 @@ export function Header() {
       </ButtonArea>
 
       <img src={logo} alt="Logo Food Explorer" />
-      {/* <img src={logoadmin} alt="Logo Food Explorer" /> */}
+      {/* <img src={logoadmin} alt="Logo Food Explorer Admin" /> */}
 
       <ButtonArea>
         <PiReceiptBold size={25} />
