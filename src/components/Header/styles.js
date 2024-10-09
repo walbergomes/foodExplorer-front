@@ -18,6 +18,16 @@ export const Container = styled.div`
   }
 `
 
+export const Menu = styled.button`
+  background: none;
+  border: none;
+
+  > svg {
+    font-size: 2rem;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
+`
+
 export const ButtonArea = styled.button`
   height: 25px;
   background: none;

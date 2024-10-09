@@ -7,11 +7,16 @@ import { Slogan } from "../../components/Slogan";
 import { Section } from "../../components/Section";
 import { Card } from "../../components/Card"
 
+import { SideMenu } from "../../components/SideMenu"
+
 export function Home() {
   return (
+    <>
+    <SideMenu />
+    
     <Container>
       <Header />
-
+    
       <main>
         <Slogan />
         <Section title="Refeições">
@@ -27,5 +32,7 @@ export function Home() {
 
       <Footer />
     </Container>
+    </>
+    
   );
 }

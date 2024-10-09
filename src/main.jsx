@@ -5,13 +5,13 @@ import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme"
 import GlobalStyles from "./styles/global";
 
-import { SideMenu } from "./components/SideMenu";
+import { Home } from "./pages/Home";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <SideMenu />
+      <Home />
     </ThemeProvider>
   </StrictMode>
 );

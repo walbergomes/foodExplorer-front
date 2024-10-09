@@ -1,4 +1,4 @@
-import { Container, ButtonArea } from "./styles";
+import { Container, Menu, ButtonArea } from "./styles";
 
 import logo from "../../assets/logo.svg";
 import logoadmin from "../../assets/logoadmin.svg";
@@ -9,9 +9,9 @@ import { PiReceiptBold } from "react-icons/pi";
 export function Header() {
   return (
     <Container>
-      <ButtonArea>
-        <IoMenu size={25} />
-      </ButtonArea>
+      <Menu>
+        <IoMenu />
+      </Menu>
 
       <img src={logo} alt="Logo Food Explorer" />
       {/* <img src={logoadmin} alt="Logo Food Explorer Admin" /> */}
