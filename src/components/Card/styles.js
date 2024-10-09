@@ -12,8 +12,16 @@ export const Container = styled.div`
   border-radius: 8px;
   border: 1px solid ${({ theme }) => theme.COLORS.DARK_300};
 
+  position: relative;
+
   > img {
     width: 5.5rem;
+  }
+
+  > svg {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 `
 

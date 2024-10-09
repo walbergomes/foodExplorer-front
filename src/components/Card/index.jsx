@@ -2,7 +2,7 @@ import { Container, Title, Price, Quantity } from "./styles";
 
 import dishImg from "../../assets/dish.svg"
 
-import { FaPlus, FaMinus } from "react-icons/fa6";
+import { FaPlus, FaMinus, FaRegHeart } from "react-icons/fa6";
 
 import { Button } from "../Button"
 
@@ -11,6 +11,8 @@ export function Card() {
   return (
     <Container>
       <img src={dishImg} alt="" />
+
+      <FaRegHeart size={24}/>
 
       <Title>Salada Ravanello &gt;</Title>
       <Price>R$ 49,97</Price>
