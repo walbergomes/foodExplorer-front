@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 7.5rem;
-  background-color: ${({ theme }) => theme.COLORS.DARK_1000};
+  background: ${({ theme }) => theme.COLORS.DARK_GRADIENT_200};
   border-radius: 3px;
 
   margin: 2.75rem 0 3rem 1rem;
