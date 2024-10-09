@@ -17,6 +17,12 @@ export function Home() {
         <Section title="Refeições">
           <Card />
         </Section>
+        <Section title="Pratos principais">
+          <Card />
+        </Section>
+        <Section title="Bebidas">
+          <Card />
+        </Section>
       </main>
 
       <Footer />

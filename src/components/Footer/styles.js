@@ -8,6 +8,8 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
   padding: 1.875rem;
 
+  margin-top: 1.5rem;
+
   > p {
     color: ${({ theme }) => theme.COLORS.LIGHT_200};
     font-family: "DM Sans", sans-serif;
