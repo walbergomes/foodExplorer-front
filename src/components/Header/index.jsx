@@ -6,10 +6,10 @@ import logoadmin from "../../assets/logoadmin.svg";
 import { IoMenu } from "react-icons/io5";
 import { PiReceiptBold } from "react-icons/pi";
 
-export function Header() {
+export function Header({ onOpenMenu }) {
   return (
     <Container>
-      <Menu>
+      <Menu onClick={onOpenMenu}>
         <IoMenu />
       </Menu>
 

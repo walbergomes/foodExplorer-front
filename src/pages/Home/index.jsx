@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Container } from "./styles";
 
 import { Header } from "../../components/Header";
@@ -5,18 +6,22 @@ import { Footer } from "../../components/Footer";
 
 import { Slogan } from "../../components/Slogan";
 import { Section } from "../../components/Section";
-import { Card } from "../../components/Card"
+import { Card } from "../../components/Card";
 
-import { SideMenu } from "../../components/SideMenu"
+import { SideMenu } from "../../components/SideMenu";
 
 export function Home() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   return (
-    <>
-    <SideMenu />
-    
     <Container>
-      <Header />
-    
+      <SideMenu
+        menuIsOpen={menuIsOpen}
+        onCloseMenu={() => setMenuIsOpen(false)}
+      />
+
+      <Header onOpenMenu={() => setMenuIsOpen(true)} />
+
       <main>
         <Slogan />
         <Section title="Refeições">
@@ -32,7 +37,5 @@ export function Home() {
 
       <Footer />
     </Container>
-    </>
-    
   );
 }

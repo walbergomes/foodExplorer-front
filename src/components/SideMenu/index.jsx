@@ -6,11 +6,11 @@ import { FiSearch } from "react-icons/fi"
 import { Footer } from "../Footer";
 import { Input } from "../Input"
 
-export function SideMenu() {
+export function SideMenu({ menuIsOpen, onCloseMenu }) {
   return (
-    <Container>
+    <Container data-menu-is-open={menuIsOpen} >
       <header>
-        <CloseMenu>
+        <CloseMenu onClick={onCloseMenu}>
           <FaX />
         </CloseMenu>
         <p>Menu</p>
