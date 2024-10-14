@@ -8,6 +8,10 @@ export const Container = styled.div`
 
   width: 100%;
 
+  &:hover {
+    filter: brightness(.7);
+  }
+
   > button {
     height: 48px;
     width: 100%;
