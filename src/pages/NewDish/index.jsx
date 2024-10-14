@@ -8,6 +8,7 @@ import { Footer } from "../../components/Footer";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { InputFile } from "../../components/InputFile";
+import { Select } from "../../components/Select";
 
 import { IoIosArrowBack } from "react-icons/io";
 
@@ -37,6 +38,12 @@ export function NewDish() {
           <Wrapper>
             <label htmlFor="name">Nome</label>
             <Input id="name" type="text" placeholder="Ex:. Salada Ceasar" />
+          </Wrapper>
+          <Wrapper>
+            <label htmlFor="category">Categoria</label>
+            <Select 
+              id="category"
+            />
           </Wrapper>
           <Wrapper>
             <label htmlFor="price">Preço</label>
