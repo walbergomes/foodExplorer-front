@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, BackButton, Form, Wrapper, TextArea, IngretientsArea } from "./styles";
+import { Container, BackButton, Form, Wrapper, IngretientsArea } from "./styles";
 
 import { SideMenu } from "../../components/SideMenu";
 import { Header } from "../../components/Header";
@@ -10,6 +10,7 @@ import { Button } from "../../components/Button";
 import { InputFile } from "../../components/InputFile";
 import { Select } from "../../components/Select";
 import { NewIngredient } from "../../components/NewIngredient";
+import { TextArea } from "../../components/TextArea";
 
 import { IoIosArrowBack } from "react-icons/io";
 

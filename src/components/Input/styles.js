@@ -28,6 +28,7 @@ export const Container = styled.div`
     padding: 0 0.8rem;
 
     font-family: "Roboto", system-ui;
+    font-size: 1rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
     &::placeholder {
