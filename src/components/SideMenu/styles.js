@@ -41,6 +41,29 @@ export const Container = styled.aside`
   > main {
     flex: 1;
     padding: 2.25rem 1.75rem 0;
+
+    a {
+      display: block;
+      width: 100%;
+
+      margin-top: 2.25rem;
+
+      font-size: 1.5rem;
+      font-weight: 300;
+      font-family: "Poppins", sans-serif;
+
+      color: ${({ theme }) => theme.COLORS.LIGHT_300};
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+
+        margin-top: 10px;
+        background-color: ${({ theme }) => theme.COLORS.DARK_1000};
+      }
+    }
   }
 `;
 

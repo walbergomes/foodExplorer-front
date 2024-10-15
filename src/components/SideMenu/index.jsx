@@ -22,6 +22,10 @@ export function SideMenu({ menuIsOpen, onCloseMenu }) {
           placeholder="Busque por pratos ou igredientes"
         />
 
+        <a href="#">
+          Novo prato
+        </a>
+
         <SignOut>
           Sair
         </SignOut>
