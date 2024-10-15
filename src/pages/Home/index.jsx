@@ -10,6 +10,14 @@ import { Card } from "../../components/Card";
 
 import { SideMenu } from "../../components/SideMenu";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper/modules";
+
 export function Home() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -25,13 +33,78 @@ export function Home() {
       <main>
         <Slogan />
         <Section title="Refeições">
-          <Card />
+          <Swiper
+            slidesPerView={1.8}
+            spaceBetween={30}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+          </Swiper>
         </Section>
+
         <Section title="Pratos principais">
-          <Card />
+        <Swiper
+            slidesPerView={1.8}
+            spaceBetween={30}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+          </Swiper>
         </Section>
+
         <Section title="Bebidas">
-          <Card />
+        <Swiper
+            slidesPerView={1.8}
+            spaceBetween={30}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card />
+            </SwiperSlide>
+          </Swiper>
         </Section>
       </main>
 
