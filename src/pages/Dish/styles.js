@@ -55,7 +55,7 @@ export const DishArea = styled.div`
   @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
     text-align: start;
     > .button-width {
-      width: rem;
+      width: 9rem;
     }
     
   }
