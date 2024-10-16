@@ -11,7 +11,7 @@ export const Container = styled.div`
 
     padding: 0 1rem;
 
-    @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
       padding: 0 7rem;
     }
   }

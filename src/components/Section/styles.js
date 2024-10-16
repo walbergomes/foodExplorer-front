@@ -8,7 +8,7 @@ export const Container = styled.div`
     margin: 1.5rem 0;
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
-    @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
       font-size: 2rem;
     }
   }

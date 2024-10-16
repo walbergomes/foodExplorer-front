@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   margin: 2.75rem 0 3rem 1rem;
 
-  @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
     height: 16rem;
 
     margin: 10.25rem 0 3rem 1rem;
@@ -20,7 +20,7 @@ export const Container = styled.div`
   > img {
     margin: 0 0 2rem -2rem;
 
-    @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
       width: 35.5rem;
       height: 23rem;
 
@@ -34,7 +34,7 @@ export const Container = styled.div`
       font-weight: 600;
       color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
-      @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+      @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
         font-size: 2.5rem;
         font-weight: 500;
       }
@@ -45,7 +45,7 @@ export const Container = styled.div`
       font-weight: 400;
       color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
-      @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+      @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
         font-size: 1rem;
       }
     }

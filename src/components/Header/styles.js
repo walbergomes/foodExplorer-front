@@ -12,14 +12,14 @@ export const Container = styled.div`
 
   position: relative;
 
-  @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
     padding: 1.75rem 7rem;
   }
 
   > img {
     width: 9rem;
 
-    @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
       width: 12rem;
     }
   }

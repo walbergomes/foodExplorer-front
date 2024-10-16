@@ -11,12 +11,12 @@ export const Container = styled.div`
 
   margin-top: 1.5rem;
 
-  @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
     padding: 1.75rem 7rem;
   }
 
   > img {
-    @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
       width: 11rem;
     }
   }
@@ -26,7 +26,7 @@ export const Container = styled.div`
     font-family: "DM Sans", sans-serif;
     font-size: .75rem;
 
-    @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
       font-size: .875rem;
     }
   }
