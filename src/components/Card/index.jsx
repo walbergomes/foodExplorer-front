@@ -5,6 +5,7 @@ import {
   Quantity,
   EditButton,
   PriceArea,
+  ButtonQuantity,
 } from "./styles";
 
 import dishImg from "../../assets/dish.svg";
@@ -33,9 +34,13 @@ export function Card() {
 
       <PriceArea>
         <Quantity>
-          <FaMinus />
+          <ButtonQuantity>
+            <FaMinus />
+          </ButtonQuantity>
           <span>01</span>
-          <FaPlus />
+          <ButtonQuantity>
+            <FaPlus />
+          </ButtonQuantity>
         </Quantity>
 
         <Button title="incluir" bg="TOMATO_100" />

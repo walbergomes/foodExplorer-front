@@ -16,7 +16,7 @@ export const Container = styled.div`
   position: relative;
 
   > p {
-    font-size: .875rem;
+    font-size: 0.875rem;
     text-align: center;
   }
 
@@ -61,19 +61,14 @@ export const Quantity = styled.div`
   align-items: center;
   gap: 0.875rem;
 
-  > svg {
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    font-size: 1rem;
-
-    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
-    font-size: 1.5rem;
-  }
-  }
-
   > span {
     font-size: 1rem;
     font-family: "Roboto", sans-serif;
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -101,4 +96,18 @@ export const PriceArea = styled.div`
   @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
     flex-direction: row;
   }
-`
+`;
+
+export const ButtonQuantity = styled.button`
+  background: none;
+  border: none;
+
+  > svg {
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    font-size: 1rem;
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+      font-size: 1.8rem;
+    }
+  }
+`;
