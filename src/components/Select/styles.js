@@ -14,6 +14,11 @@ export const Container = styled.select`
 
   border: none;
   border-radius: 8px;
+  outline: none;
+
+  &:focus-within {
+    outline: 2px solid #66afe9;
+  }
 
   padding: 0 0.8rem;
 

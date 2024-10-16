@@ -18,4 +18,10 @@ export const Container = styled.textarea`
     color: ${({ theme }) => theme.COLORS.LIGHT_500};
     font-size: 1rem;
   }
+
+  outline: none;
+
+  &:focus-within {
+    outline: 2px solid #66afe9;
+  }
 `;
