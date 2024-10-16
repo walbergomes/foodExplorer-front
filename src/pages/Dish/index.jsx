@@ -5,6 +5,8 @@ import {
   DishArea,
   IngredientsArea,
   Section,
+  OrderQuantityArea,
+  QuantityButton,
 } from "./styles";
 
 import { Header } from "../../components/Header";
@@ -15,6 +17,7 @@ import { Ingredient } from "../../components/Ingredient";
 import { Button } from "../../components/Button";
 
 import { IoIosArrowBack } from "react-icons/io";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 import dishImg from "../../assets/dish.svg";
 
@@ -53,11 +56,28 @@ export function Dish() {
               <Ingredient title="rabanete" />
               <Ingredient title="tomate" />
             </IngredientsArea>
-            <Button 
+
+            <OrderQuantityArea>
+              <QuantityButton>
+                <FaMinus />
+              </QuantityButton>
+              <span>01</span>
+              <QuantityButton>
+                <FaPlus />
+              </QuantityButton>
+
+              <Button
+                className="button-width"
+                title={`incluir R$ 25,00`}
+                bg="TOMATO_100"
+              />
+            </OrderQuantityArea>
+
+            {/* <Button
               className="button-width"
-              title="Editar prato" 
-              bg="TOMATO_100" 
-            />
+              title="Editar prato"
+              bg="TOMATO_100"
+            /> */}
           </DishArea>
         </Section>
       </main>

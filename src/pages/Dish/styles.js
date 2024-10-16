@@ -50,14 +50,11 @@ export const DishArea = styled.div`
 
   margin-bottom: 3rem;
 
- 
-
   @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
     text-align: start;
     > .button-width {
       width: 9rem;
     }
-    
   }
 
   > h1 {
@@ -109,5 +106,38 @@ export const Section = styled.section`
     align-items: center;
     justify-content: center;
     gap: 3rem;
+  }
+`;
+
+export const OrderQuantityArea = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  > span {
+    font-size: 1.3rem;
+  }
+
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+    margin-top: 3rem;
+
+    > .button-width {
+      width: 10rem;
+      margin-left: 1.5rem;
+    }
+  }
+`;
+
+export const QuantityButton = styled.button`
+  background: none;
+  border: none;
+
+  > svg {
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    font-size: 1rem;
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+      font-size: 1.8rem;
+    }
   }
 `;
