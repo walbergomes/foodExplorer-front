@@ -7,6 +7,8 @@ export const Container = styled.div`
   gap: 0.5rem;
 
   width: 100%;
+  background-color: ${({ theme, $bg }) => $bg ? theme.COLORS[$bg] : theme.COLORS.LIGHT_300};
+  border-radius: 5px;
 
   &:hover {
     filter: brightness(.7);
@@ -14,11 +16,10 @@ export const Container = styled.div`
 
   > button {
     height: 48px;
-    width: 100%;
+    /* width: 100%; */
 
-    background-color: ${({ theme, $bg }) => $bg ? theme.COLORS[$bg] : theme.COLORS.LIGHT_300};
     border: none;
-    border-radius: 5px;
+    background: none;
 
     font-family: "Poppins", sans-serif;
     font-size: .875rem;

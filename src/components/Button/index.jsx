@@ -5,7 +5,7 @@ export function Button({ icon: Icon, title, bg, ...rest}) {
     <Container 
       $bg={bg}
     >
-      { Icon && <Icon />}
+      { Icon && <Icon size={20} />}
       <button {...rest}>{title}</button>
     </Container>
   )
