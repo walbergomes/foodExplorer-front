@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { DEVICES_BREAKPOINTS } from "../../styles/devicesBreakpoints"
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_700};
   padding: 3.5rem 1.75rem 1.5rem;
@@ -12,9 +14,14 @@ export const Container = styled.div`
 
   > img {
     width: 9rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+      width: 12rem;
+    }
+  }
+
+  > .order {
+    width: 30rem;
   }
 `
 
