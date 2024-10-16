@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Container } from "./styles";
 
+import { DEVICES_BREAKPOINTS } from "../../styles/devicesBreakpoints";
+
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
@@ -38,6 +40,14 @@ export function Home() {
             spaceBetween={30}
             modules={[Pagination]}
             className="mySwiper"
+            breakpoints={{
+              [parseInt(DEVICES_BREAKPOINTS.LAPTOP)]: {
+                slidesPerView: 3.2,
+              },
+              [parseInt(DEVICES_BREAKPOINTS.LAPTOP_L)]: {
+                slidesPerView: 4.2,
+              },
+            }}
           >
             <SwiperSlide>
               <Card />
@@ -63,6 +73,14 @@ export function Home() {
             spaceBetween={30}
             modules={[Pagination]}
             className="mySwiper"
+            breakpoints={{
+              [parseInt(DEVICES_BREAKPOINTS.LAPTOP)]: {
+                slidesPerView: 3.2,
+              },
+              [parseInt(DEVICES_BREAKPOINTS.LAPTOP_L)]: {
+                slidesPerView: 4.2,
+              },
+            }}
           >
             <SwiperSlide>
               <Card />
@@ -88,6 +106,14 @@ export function Home() {
             spaceBetween={30}
             modules={[Pagination]}
             className="mySwiper"
+            breakpoints={{
+              [parseInt(DEVICES_BREAKPOINTS.LAPTOP)]: {
+                slidesPerView: 3.2,
+              },
+              [parseInt(DEVICES_BREAKPOINTS.LAPTOP_L)]: {
+                slidesPerView: 4.2,
+              },
+            }}
           >
             <SwiperSlide>
               <Card />
