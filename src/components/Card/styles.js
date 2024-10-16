@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICES_BREAKPOINTS } from "../../styles/devicesBreakpoints";
 
 export const Container = styled.div`
   display: flex;
@@ -14,8 +15,17 @@ export const Container = styled.div`
 
   position: relative;
 
+  > p {
+    font-size: .875rem;
+    text-align: center;
+  }
+
   > img {
     width: 5.5rem;
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+      width: 11rem;
+    }
   }
 
   > svg {
@@ -25,16 +35,25 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.p`
+export const Title = styled.h2`
   font-size: 0.875rem;
   font-weight: 500;
+
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+    font-size: 1.5rem;
+  }
 `;
 
-export const Price = styled.p`
+export const Price = styled.span`
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: ${({ theme }) => theme.COLORS.CAKE_100};
+
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
 `;
 
 export const Quantity = styled.div`
@@ -44,6 +63,11 @@ export const Quantity = styled.div`
 
   > svg {
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    font-size: 1rem;
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+    font-size: 1.5rem;
+  }
   }
 
   > span {
@@ -65,3 +89,16 @@ export const EditButton = styled.button`
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
 `;
+
+export const PriceArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP_L}) {
+    flex-direction: row;
+  }
+`
