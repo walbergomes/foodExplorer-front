@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { DEVICES_BREAKPOINTS } from "../../styles/devicesBreakpoints"
+import { DEVICES_BREAKPOINTS } from "../../styles/devicesBreakpoints";
 
 export const Container = styled.div`
   display: flex;
@@ -12,6 +12,10 @@ export const Container = styled.div`
 
   position: relative;
 
+  @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    padding: 1.75rem 7rem;
+  }
+
   > img {
     width: 9rem;
 
@@ -23,7 +27,7 @@ export const Container = styled.div`
   > .order {
     width: 30rem;
   }
-`
+`;
 
 export const Menu = styled.button`
   background: none;
@@ -33,7 +37,7 @@ export const Menu = styled.button`
     font-size: 2rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
-`
+`;
 
 export const ButtonArea = styled.button`
   height: 25px;
@@ -50,7 +54,7 @@ export const ButtonArea = styled.button`
     justify-content: center;
 
     position: absolute;
-    bottom: .75rem;
+    bottom: 0.75rem;
     left: 1rem;
 
     width: 1.25rem;
@@ -59,4 +63,4 @@ export const ButtonArea = styled.button`
     background-color: ${({ theme }) => theme.COLORS.TOMATO_200};
     border-radius: 50%;
   }
-`
+`;

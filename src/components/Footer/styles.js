@@ -11,6 +11,10 @@ export const Container = styled.div`
 
   margin-top: 1.5rem;
 
+  @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
+    padding: 1.75rem 7rem;
+  }
+
   > img {
     @media (min-width: ${DEVICES_BREAKPOINTS.TABLET}) {
       width: 11rem;
