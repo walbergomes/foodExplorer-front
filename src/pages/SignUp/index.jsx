@@ -18,7 +18,7 @@ export function SignUp() {
           <Input
             type="name"
             id="name"
-            placeholder="Exemplo: exemplo@exemplo.com.br"
+            placeholder="Exemplo: Maria Da Silva"
           />
         </Wrapper>
 
