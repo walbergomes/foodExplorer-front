@@ -20,26 +20,27 @@ export function Header({ onOpenMenu }) {
       <img src={logo} alt="Logo Food Explorer" />
       {/* <img src={logoadmin} alt="Logo Food Explorer Admin" /> */}
 
-      {/* <Input 
+      <Input
+        style="search-input"
         icon={FaSearch}
         placeholder="Busque por pratos ou ingredientes"
-      /> */}
+      />
 
-      <ButtonArea>
+      <ButtonArea className="receipt">
         <PiReceiptBold size={25} />
         <span>8</span>
       </ButtonArea>
 
-      {/* <Button 
+      <Button 
         className="order"
         icon={PiReceiptBold}
         title={`Pedidos (0)`}
         bg="TOMATO_100"
-      /> */}
+      />
 
-      {/* <ButtonArea >
+      <ButtonArea className="signout">
         <PiSignOutBold size={25} />
-      </ButtonArea> */}
+      </ButtonArea>
     </Container>
   );
 }

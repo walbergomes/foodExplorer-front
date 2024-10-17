@@ -26,6 +26,16 @@ export const Container = styled.div`
 
   > .order {
     width: 30rem;
+
+    @media (max-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+      display: none;
+    }
+  }
+
+  .search-input {
+    @media (max-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+      display: none;
+    }
   }
 `;
 
@@ -37,6 +47,10 @@ export const Menu = styled.button`
     font-size: 2rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
+
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+    display: none;
+  }
 `;
 
 export const ButtonArea = styled.button`
@@ -47,6 +61,18 @@ export const ButtonArea = styled.button`
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
   position: relative;
+
+  &.receipt {
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+      display: none;
+    }
+  }
+
+  &.signout {
+    @media (max-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+      display: none;
+    }
+  }
 
   > span {
     display: flex;
