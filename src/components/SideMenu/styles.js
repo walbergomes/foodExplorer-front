@@ -12,8 +12,10 @@ export const Container = styled.aside`
   @media (max-width: ${DEVICES_BREAKPOINTS.MOBILE_L}) {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
 
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -51,6 +53,8 @@ export const Container = styled.aside`
       font-size: 1.5rem;
       font-weight: 300;
       font-family: "Poppins", sans-serif;
+
+      text-align: start;
 
       color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
