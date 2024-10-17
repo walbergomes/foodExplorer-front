@@ -10,6 +10,8 @@ export const Container = styled.div`
   background-color: ${({ theme, $bg }) => $bg ? theme.COLORS[$bg] : theme.COLORS.LIGHT_300};
   border-radius: 5px;
 
+  cursor: pointer;
+
   &:hover {
     filter: brightness(.7);
   }
