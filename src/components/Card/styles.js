@@ -15,6 +15,11 @@ export const Container = styled.div`
 
   position: relative;
 
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1.3);
+  }
+
   > p {
     font-size: 0.875rem;
     text-align: center;
