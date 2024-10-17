@@ -70,7 +70,7 @@ export const Form = styled.form`
       grid-area: category;
     }
 
-    > #igredients-wrapper {
+    > #ingredients-wrapper {
       grid-area: ingredients;
     }
 

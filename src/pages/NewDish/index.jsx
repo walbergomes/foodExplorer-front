@@ -53,7 +53,7 @@ export function NewDish() {
             <Select id="category" />
           </Wrapper>
 
-          <Wrapper id="igredients-wrapper">
+          <Wrapper id="ingredients-wrapper">
             <label htmlFor="ingredients">Ingredientes</label>
             <IngretientsArea>
               <NewIngredient isNew placeholder="Adicionar" />
