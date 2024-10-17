@@ -44,17 +44,17 @@ export function EditDish() {
         <Form>
           <InputFile id="file" />
 
-          <Wrapper>
+          <Wrapper id="name-wrapper">
             <label htmlFor="name">Nome</label>
             <Input id="name" type="text" placeholder="Ex:. Salada Ceasar" />
           </Wrapper>
 
-          <Wrapper>
+          <Wrapper id="category-wrapper">
             <label htmlFor="category">Categoria</label>
             <Select id="category" />
           </Wrapper>
 
-          <Wrapper>
+          <Wrapper id="ingredients-wrapper">
             <label htmlFor="ingrefients">Ingredientes</label>
             <IngretientsArea>
               <NewIngredient value="Pão Naan" />
@@ -62,12 +62,12 @@ export function EditDish() {
             </IngretientsArea>
           </Wrapper>
 
-          <Wrapper>
+          <Wrapper id="price-wrapper">
             <label htmlFor="price">Preço</label>
             <Input id="price" type="text" placeholder="R$ 00,00" />
           </Wrapper>
 
-          <Wrapper>
+          <Wrapper id="textarea-wrapper">
             <label htmlFor="description">Descrição</label>
             <TextArea placeholder="Fale brevemente sobre o prato, seus ingredientes e composição" />
           </Wrapper>
