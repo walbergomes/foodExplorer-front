@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICES_BREAKPOINTS } from "../../styles/devicesBreakpoints"
 
 export const Container = styled.div`
   display: flex;
@@ -14,6 +15,10 @@ export const Container = styled.div`
     h1 {
       font-weight: 500;
       margin: 2rem 0 1.5rem;
+    }
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+      padding: 2.5rem 7.6rem 0 7.6rem;
     }
   }
 `;
@@ -43,9 +48,40 @@ export const BackButton = styled.button`
 `;
 
 export const Form = styled.form`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1.5rem;
+
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+    grid-template-areas: 
+      "file name name category"
+      "ingredients ingredients ingredients price"
+      "textarea textarea textarea textarea"
+    ;
+
+    > #file {
+      grid-area: file;
+    }
+
+    > #name-wrapper {
+      grid-area: name;
+    }
+
+    > #category-wrapper {
+      grid-area: category;
+    }
+
+    > #igredients-wrapper {
+      grid-area: ingredients;
+    }
+
+    > #price-wrapper {
+      grid-area: price;
+    }
+
+    > #textarea-wrapper {
+      grid-area: textarea;
+    }
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -91,3 +127,7 @@ export const IngretientsArea = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_900};
   border-radius: 8px;
 `;
+
+export const InputGroup = styled.div`
+
+`

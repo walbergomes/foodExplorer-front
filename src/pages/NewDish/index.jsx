@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { Container, BackButton, Form, Wrapper, IngretientsArea } from "./styles";
+import {
+  Container,
+  BackButton,
+  Form,
+  Wrapper,
+  IngretientsArea,
+  InputGroup,
+} from "./styles";
 
 import { SideMenu } from "../../components/SideMenu";
 import { Header } from "../../components/Header";
@@ -37,39 +44,32 @@ export function NewDish() {
         <Form>
           <InputFile id="file" />
 
-          <Wrapper>
+          <Wrapper id="name-wrapper">
             <label htmlFor="name">Nome</label>
             <Input id="name" type="text" placeholder="Ex:. Salada Ceasar" />
           </Wrapper>
 
-          <Wrapper>
+          <Wrapper id="category-wrapper">
             <label htmlFor="category">Categoria</label>
-            <Select 
-              id="category"
-            />
+            <Select id="category" />
           </Wrapper>
 
-          <Wrapper>
-            <label htmlFor="ingrefients">Ingredientes</label>
+          <Wrapper id="igredients-wrapper">
+            <label htmlFor="ingredients">Ingredientes</label>
             <IngretientsArea>
-              <NewIngredient 
-                isNew
-                placeholder="Adicionar"
-              />
-              <NewIngredient 
-                value="Pão Naan"
-              />
+              <NewIngredient isNew placeholder="Adicionar" />
+              <NewIngredient value="Pão Naan" />
             </IngretientsArea>
           </Wrapper>
 
-          <Wrapper>
+          <Wrapper id="price-wrapper">
             <label htmlFor="price">Preço</label>
             <Input id="price" type="text" placeholder="R$ 00,00" />
           </Wrapper>
 
-          <Wrapper>
+          <Wrapper id="textarea-wrapper">
             <label htmlFor="description">Descrição</label>
-            <TextArea placeholder="Fale brevemente sobre o prato, seus ingredientes e composição" />
+            <TextArea id="textarea" placeholder="Fale brevemente sobre o prato, seus ingredientes e composição" />
           </Wrapper>
 
           <Button title="Salvar alterações" bg="TOMATO_400" />
