@@ -5,7 +5,6 @@ import {
   Form,
   Wrapper,
   IngretientsArea,
-  InputGroup,
 } from "./styles";
 
 import { SideMenu } from "../../components/SideMenu";

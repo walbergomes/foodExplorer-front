@@ -127,7 +127,3 @@ export const IngretientsArea = styled.div`
   background-color: ${({ theme }) => theme.COLORS.DARK_900};
   border-radius: 8px;
 `;
-
-export const InputGroup = styled.div`
-
-`
