@@ -39,7 +39,7 @@ export function EditDish() {
           <span>voltar</span>
         </BackButton>
 
-        <h1>Novo prato</h1>
+        <h1>Editar prato</h1>
 
         <Form>
           <InputFile id="file" />
