@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { DEVICES_BREAKPOINTS } from "../../styles/devicesBreakpoints"
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ export const Container = styled.div`
   }
 `;
 
-export const BackButton = styled.button`
+export const BackButton = styled(Link)`
   background: none;
   border: none;
 

@@ -34,7 +34,7 @@ export function EditDish() {
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
 
       <main>
-        <BackButton>
+        <BackButton to="/">
           <IoIosArrowBack />
           <span>voltar</span>
         </BackButton>

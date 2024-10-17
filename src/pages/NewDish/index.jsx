@@ -33,7 +33,7 @@ export function NewDish() {
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
 
       <main>
-        <BackButton>
+        <BackButton to="/">
           <IoIosArrowBack />
           <span>voltar</span>
         </BackButton>

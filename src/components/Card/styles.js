@@ -21,8 +21,13 @@ export const Container = styled.div`
   }
 
   > p {
+    display: none;
     font-size: 0.875rem;
     text-align: center;
+
+    @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+      display: block;
+    }
   }
 
   > img {

@@ -6,6 +6,8 @@ import { FiSearch } from "react-icons/fi"
 import { Footer } from "../Footer";
 import { Input } from "../Input"
 
+import { Link } from "react-router-dom";
+
 export function SideMenu({ menuIsOpen, onCloseMenu }) {
   return (
     <Container data-menu-is-open={menuIsOpen} >
@@ -22,9 +24,9 @@ export function SideMenu({ menuIsOpen, onCloseMenu }) {
           placeholder="Busque por pratos ou igredientes"
         />
 
-        <a href="#">
+        <Link to="/new">
           Novo prato
-        </a>
+        </Link>
 
         <SignOut>
           Sair
