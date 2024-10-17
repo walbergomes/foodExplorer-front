@@ -11,6 +11,7 @@ export function SignIn() {
       <img src={logo} alt="Logo Food Explorer" />
 
       <Form>
+        <h1>Faça Login</h1>
         <Wrapper>
           <label htmlFor="email">Email</label>
           <Input 

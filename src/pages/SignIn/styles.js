@@ -12,6 +12,13 @@ export const Container = styled.div`
 
   gap: 4.5rem;
 
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 6.75rem;
+  }
+
   > img {
     width: 17rem;
     margin: 0 auto;
@@ -27,10 +34,27 @@ export const Form = styled.div`
   flex-direction: column;
   gap: 2rem;
 
+  > h1 {
+    display: none;
+  }
+
   > a {
     text-align: center;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     font-size: 0.875rem;
+  }
+
+  @media (min-width: ${DEVICES_BREAKPOINTS.LAPTOP}) {
+    min-width: 29rem;
+    background-color: ${({ theme }) => theme.COLORS.DARK_700};
+    padding: 4rem;
+    border-radius: 16px;
+
+    > h1 {
+      display: block;
+      text-align: center;
+      font-weight: 500;
+    }
   }
 `;
 

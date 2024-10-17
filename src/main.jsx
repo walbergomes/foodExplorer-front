@@ -5,13 +5,13 @@ import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme"
 import GlobalStyles from "./styles/global";
 
-import { EditDish } from "./pages/EditDish";
+import { SignIn } from "./pages/SignIn";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <EditDish />
+      <SignIn />
     </ThemeProvider>
   </StrictMode>
 );
